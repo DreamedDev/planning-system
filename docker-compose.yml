@@ -1,16 +1,16 @@
 version: '3'
 services:
-  planning_system:
-    container_name: 'planning_system'
-    build: ./planning-system
+  planning_system_frontend:
+    container_name: 'planning_system_frontend'
+    build: ./planning-system-frontend
     ports:
     - 80:80
     depends_on:
-    - planning_system_api
+    - planning_system_backend
 
-  planning_system_api:
-    container_name: 'planning_system_api'
-    build: ./planning-system-api/
+  planning_system_backend:
+    container_name: 'planning_system_backend'
+    build: ./planning-system-backend/
     ports:
     - "8080:8080"
     depends_on:
