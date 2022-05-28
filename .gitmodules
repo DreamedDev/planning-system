@@ -1,0 +1,6 @@
+[submodule "planning-system-frontend"]
+	path = planning-system-frontend
+	url = https://github.com/DreamedDev/planning-system-frontend.git
+[submodule "planning-system-backend"]
+	path = planning-system-backend
+	url = https://github.com/DreamedDev/planning-system-backend.git
